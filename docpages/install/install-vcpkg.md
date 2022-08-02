@@ -2,8 +2,8 @@
 
 To install D++ on a system from VCPKG:
 
-- Ensure VCPKG is correctly installed, and run `vcpkg integrate install` to integrate it with your preferred IDE. This has been reported to work with Visual Studio, vscode, and JetBrains CLion.
-- From a command line, type `vcpkg install dpp:x64-windows` (replace `x64-windows` with whichever OS and architecture you want the library to be built for)
+- Ensure VCPKG is correctly installed, and run `vcpkg integrate install` to integrate it with your build system.
+- From a command line, type `vcpkg install dpp`
 \image html vcpkg.png
 - VCPKG will install the library and dependencies for you! Once completed you will receive a message indicating success:
 
