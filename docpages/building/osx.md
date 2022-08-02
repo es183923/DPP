@@ -19,7 +19,12 @@ For voice support, additional dependencies are required:
 
     cmake -B ./build
     cmake --build ./build -j8
-    
+
+If you are on an Apple Silicon device, you maay need to append `-DCMAKE_APPLE_SILICON_PROCESSOR` to the configure command, so you would have: 
+
+    cmake -B ./build -DCMAKE_APPLE_SILICON_PROCESSOR
+    cmake --build ./build -j8
+
 Replace the number after -j with a number suitable for your setup, usually the same as the number of cores on your machine. `cmake` will fetch any dependencies that are required for you and ensure they are compiled alongside the library.
 
 ## 4. Install globally
